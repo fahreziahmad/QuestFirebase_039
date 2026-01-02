@@ -14,3 +14,6 @@ object PenyediaViewModel {
         // ... initializer lainnya
     }
 }
+
+fun CreationExtras.aplikasiSiswa(): AplikasiDataSiswa =
+    (this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as AplikasiDataSiswa)
