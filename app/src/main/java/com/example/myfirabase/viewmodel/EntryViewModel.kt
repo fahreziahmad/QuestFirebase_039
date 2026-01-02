@@ -1,0 +1,13 @@
+package com.example.myfirabase.viewmodel
+
+import androidx.compose.runtime.mutableStateOf
+import androidx.lifecycle.ViewModel
+import com.example.myfirabase.modeldata.DetailSiswa
+import com.example.myfirabase.modeldata.UIStateSiswa
+import com.example.myfirabase.repositori.RepositorySiswa
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import com.example.myfirabase.modeldata.toDataSiswa
+class EntryViewModel(private val repositorySiswa: RepositorySiswa) : ViewModel() {
+    var uiStateSiswa by mutableStateOf(UIStateSiswa())
+        private set
